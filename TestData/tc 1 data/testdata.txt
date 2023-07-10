@@ -1,0 +1,14 @@
+Valid Input in English 
+------------------------
+Enter the corret text in the searh bocx
+use IsEbable method
+
+Valid input in hindi 
+----------------------
+खोज बॉक्स में शुद्ध पाठ दर्ज करें
+use IsEbable method
+
+Vali
+Invalid and Invalid input
+---------------
+Enter$ the corret text _in the searh bocx
