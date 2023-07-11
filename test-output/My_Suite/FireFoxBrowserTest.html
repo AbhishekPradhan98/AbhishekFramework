@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 10 11:55:11 IST 2023</td>
+<td>Started on:</td><td>Mon Jul 10 17:18:51 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>146 seconds (146691 ms)</td>
+<tr><td>Total time:</td><td>145 seconds (145176 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -70,6 +70,7 @@ function toggleAllBoxes() {
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
@@ -81,9 +82,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [2ee5f6ba-b4de-4dbc-b3ed-decd2d418fbb, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:15194, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13628, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:15194/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2ee5f6ba-b4de-4dbc-b3ed-decd2d418fbb
+Command: [031dcd58-7c2d-4d81-836b-daa7e0d21ac4, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:36375, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15888, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36375/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 031dcd58-7c2d-4d81-836b-daa7e0d21ac4
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -99,17 +100,17 @@ Session ID: 2ee5f6ba-b4de-4dbc-b3ed-decd2d418fbb
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
 	at PageObjects.StatusReportPage.EnterSearchBox(StatusReportPage.java:61)
-	at StepDefinitions.StatusReport_Step.AdminUnpublish_theReport(StatusReport_Step.java:122)
-	at ✽.Admin enters the status as &quot;Unpublish&quot; and Selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/AdminHomePage.feature:27)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace905962412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace905962412'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type=&apos;search&apos;]
+	at StepDefinitions.StatusReport_Step.AdminUnpublish_theReport(StatusReport_Step.java:125)
+	at ✽.Admin enters the status as &quot;Unpublish&quot; and Selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/B_AdminHomePage.feature:27)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1256799800", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1256799800'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type=&apos;search&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [2ee5f6ba-b4de-4dbc-b3ed-decd2d418fbb, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:15194, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13628, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:15194/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2ee5f6ba-b4de-4dbc-b3ed-decd2d418fbb
+Command: [031dcd58-7c2d-4d81-836b-daa7e0d21ac4, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:36375, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15888, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36375/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 031dcd58-7c2d-4d81-836b-daa7e0d21ac4
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -130,74 +131,11 @@ Session ID: 2ee5f6ba-b4de-4dbc-b3ed-decd2d418fbb
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
 	at PageObjects.StatusReportPage.EnterSearchBox(StatusReportPage.java:61)
-	at StepDefinitions.StatusReport_Step.AdminUnpublish_theReport(StatusReport_Step.java:122)
-	at ✽.Admin enters the status as &quot;Unpublish&quot; and Selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/AdminHomePage.feature:27)
+	at StepDefinitions.StatusReport_Step.AdminUnpublish_theReport(StatusReport_Step.java:125)
+	at ✽.Admin enters the status as &quot;Unpublish&quot; and Selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/B_AdminHomePage.feature:27)
 </pre></div></td>
-<td>20</td>
-<td>TestRunner.TestNgRunner@d21a74c</td></tr>
-<tr>
-<td title='TestRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Admin user is able to upload HP Senior League Videos or not", "Verifying user able to Upload The HPCL post and HP News link"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&quot;row &quot;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0c44debc-a305-43b2-a311-febee61ec351, findElement {using=xpath, value=//div[@class=&quot;row &quot;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:43570, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9180, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:43570/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0c44debc-a305-43b2-a311-febee61ec351
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
-	at WebActions.ActionClass.Isdisplayed(ActionClass.java:62)
-	at PageObjects.HPSeniorLeaguePage.HPSeniorLeaguePageExist(HPSeniorLeaguePage.java:59)
-	at StepDefinitions.HPSeniorLeaguePage_Step.admin_is_on_hp_senior_league_page(HPSeniorLeaguePage_Step.java:33)
-	at ✽.Admin is on HP Senior League Page(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/AdminHomePage.feature:63)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1758590178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1758590178'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&quot;row &quot;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0c44debc-a305-43b2-a311-febee61ec351, findElement {using=xpath, value=//div[@class=&quot;row &quot;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:43570, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9180, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:43570/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0c44debc-a305-43b2-a311-febee61ec351
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
-	at WebActions.ActionClass.Isdisplayed(ActionClass.java:62)
-	at PageObjects.HPSeniorLeaguePage.HPSeniorLeaguePageExist(HPSeniorLeaguePage.java:59)
-	at StepDefinitions.HPSeniorLeaguePage_Step.admin_is_on_hp_senior_league_page(HPSeniorLeaguePage_Step.java:33)
-	at ✽.Admin is on HP Senior League Page(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/AdminHomePage.feature:63)
-</pre></div></td>
-<td>21</td>
-<td>TestRunner.TestNgRunner@d21a74c</td></tr>
+<td>19</td>
+<td>TestRunner.TestNgRunner@41e1e210</td></tr>
 <tr>
 <td title='TestRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Admin user able to approve and publish the post", "Verifying user able to Upload The HPCL post and HP News link"</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type=&apos;search&apos;]
@@ -205,9 +143,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [45c26a6a-34fe-49eb-91a6-751d6167e6e0, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:11165, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12644, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11165/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 45c26a6a-34fe-49eb-91a6-751d6167e6e0
+Command: [f50c1dc0-e7e9-4a56-80a4-0a797e52ee7a, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:3318, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15520, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:3318/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f50c1dc0-e7e9-4a56-80a4-0a797e52ee7a
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -223,17 +161,17 @@ Session ID: 45c26a6a-34fe-49eb-91a6-751d6167e6e0
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
 	at PageObjects.StatusReportPage.EnterSearchBox(StatusReportPage.java:61)
-	at StepDefinitions.StatusReport_Step.AdminApproved_TheReport(StatusReport_Step.java:30)
-	at ✽.Admin enters the status as &quot;Approved&quot; and selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/AdminHomePage.feature:18)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace669678735", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace669678735'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type=&apos;search&apos;]
+	at StepDefinitions.StatusReport_Step.AdminApproved_TheReport(StatusReport_Step.java:32)
+	at ✽.Admin enters the status as &quot;Approved&quot; and selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/B_AdminHomePage.feature:18)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1312930195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1312930195'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type=&apos;search&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [45c26a6a-34fe-49eb-91a6-751d6167e6e0, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:11165, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12644, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11165/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 45c26a6a-34fe-49eb-91a6-751d6167e6e0
+Command: [f50c1dc0-e7e9-4a56-80a4-0a797e52ee7a, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:3318, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15520, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:3318/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f50c1dc0-e7e9-4a56-80a4-0a797e52ee7a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -254,11 +192,123 @@ Session ID: 45c26a6a-34fe-49eb-91a6-751d6167e6e0
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
 	at PageObjects.StatusReportPage.EnterSearchBox(StatusReportPage.java:61)
-	at StepDefinitions.StatusReport_Step.AdminApproved_TheReport(StatusReport_Step.java:30)
-	at ✽.Admin enters the status as &quot;Approved&quot; and selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/AdminHomePage.feature:18)
+	at StepDefinitions.StatusReport_Step.AdminApproved_TheReport(StatusReport_Step.java:32)
+	at ✽.Admin enters the status as &quot;Approved&quot; and selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/B_AdminHomePage.feature:18)
 </pre></div></td>
-<td>21</td>
-<td>TestRunner.TestNgRunner@d21a74c</td></tr>
+<td>20</td>
+<td>TestRunner.TestNgRunner@41e1e210</td></tr>
+<tr>
+<td title='TestRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Admin user able to Rejected the report is rejected successfully", "Verifying user able to Upload The HPCL post and HP News link"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type=&apos;search&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9676c70d-8cf3-40d3-97aa-431621287979, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:30703, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12544, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:30703/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9676c70d-8cf3-40d3-97aa-431621287979
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at PageObjects.StatusReportPage.EnterSearchBox(StatusReportPage.java:61)
+	at StepDefinitions.StatusReport_Step.adminEntersStatusAndSubmit(StatusReport_Step.java:78)
+	at ✽.Admin enters the Status as &quot;Rejected&quot; and selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/B_AdminHomePage.feature:34)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21387540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21387540'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type=&apos;search&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9676c70d-8cf3-40d3-97aa-431621287979, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:30703, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12544, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:30703/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9676c70d-8cf3-40d3-97aa-431621287979
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at PageObjects.StatusReportPage.EnterSearchBox(StatusReportPage.java:61)
+	at StepDefinitions.StatusReport_Step.adminEntersStatusAndSubmit(StatusReport_Step.java:78)
+	at ✽.Admin enters the Status as &quot;Rejected&quot; and selects the submit button(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/B_AdminHomePage.feature:34)
+</pre></div></td>
+<td>19</td>
+<td>TestRunner.TestNgRunner@41e1e210</td></tr>
+<tr>
+<td title='TestRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user abel to upload HP Radar post", "Verifying user able to Upload The HPCL post and HP News link"</td>
+<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (625, 932) is out of bounds of viewport width (1280) and height (899)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cb8c8acb-b5d0-44ad-8b2e-a350b41d8bf2, actions {actions=[org.openqa.selenium.interactions.Sequence@318155b1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:12330, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18928, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:12330/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb8c8acb-b5d0-44ad-8b2e-a350b41d8bf2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:603)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:585)
+	at WebActions.ActionClass.Click(ActionClass.java:31)
+	at PageObjects.HPCL_PostPage.Slect_UploadBtn(HPCL_PostPage.java:157)
+	at StepDefinitions.PHRadar_PostPage_Step.user_should_able_to_upload_the_post(PHRadar_PostPage_Step.java:73)
+	at ✽.User should able to upload the post(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/A_UserHomePage.feature:34)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1868936733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1868936733'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (625, 932) is out of bounds of viewport width (1280) and height (899)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cb8c8acb-b5d0-44ad-8b2e-a350b41d8bf2, actions {actions=[org.openqa.selenium.interactions.Sequence@318155b1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:12330, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18928, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:12330/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb8c8acb-b5d0-44ad-8b2e-a350b41d8bf2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:603)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:585)
+	at WebActions.ActionClass.Click(ActionClass.java:31)
+	at PageObjects.HPCL_PostPage.Slect_UploadBtn(HPCL_PostPage.java:157)
+	at StepDefinitions.PHRadar_PostPage_Step.user_should_able_to_upload_the_post(PHRadar_PostPage_Step.java:73)
+	at ✽.User should able to upload the post(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/A_UserHomePage.feature:34)
+</pre></div></td>
+<td>31</td>
+<td>TestRunner.TestNgRunner@41e1e210</td></tr>
 <tr>
 <td title='TestRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Admin user able to approve and publish the post", "Verifying user able to Upload The HPCL post and HP News link"</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[normalize-space()=&apos;HP News Submissions&apos;]
@@ -266,9 +316,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [11b81c73-52de-489e-b11c-8b6a63598dd3, findElement {using=xpath, value=//h2[normalize-space()=&apos;HP News Submissions&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:28453, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12652, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28453/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11b81c73-52de-489e-b11c-8b6a63598dd3
+Command: [b9343d13-3085-4cc9-9ea0-8712010b8101, findElement {using=xpath, value=//h2[normalize-space()=&apos;HP News Submissions&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:32799, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7316, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:32799/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b9343d13-3085-4cc9-9ea0-8712010b8101
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -286,16 +336,16 @@ Session ID: 11b81c73-52de-489e-b11c-8b6a63598dd3
 	at WebActions.ActionClass.Isdisplayed(ActionClass.java:62)
 	at PageObjects.HPNews_SubmissionPage.HPNewsPageExist(HPNews_SubmissionPage.java:37)
 	at StepDefinitions.HPNews_SubmissionPage_Step.admin_is_on_hp_news_submissions_report_page(HPNews_SubmissionPage_Step.java:31)
-	at ✽.Admin is on HP News Submissions report page(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/AdminHomePage.feature:42)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace507571639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace507571639'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[normalize-space()=&apos;HP News Submissions&apos;]
+	at ✽.Admin is on HP News Submissions report page(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/B_AdminHomePage.feature:42)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1210315704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1210315704'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[normalize-space()=&apos;HP News Submissions&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [11b81c73-52de-489e-b11c-8b6a63598dd3, findElement {using=xpath, value=//h2[normalize-space()=&apos;HP News Submissions&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:28453, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12652, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28453/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11b81c73-52de-489e-b11c-8b6a63598dd3
+Command: [b9343d13-3085-4cc9-9ea0-8712010b8101, findElement {using=xpath, value=//h2[normalize-space()=&apos;HP News Submissions&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:32799, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7316, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:32799/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b9343d13-3085-4cc9-9ea0-8712010b8101
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -318,79 +368,29 @@ Session ID: 11b81c73-52de-489e-b11c-8b6a63598dd3
 	at WebActions.ActionClass.Isdisplayed(ActionClass.java:62)
 	at PageObjects.HPNews_SubmissionPage.HPNewsPageExist(HPNews_SubmissionPage.java:37)
 	at StepDefinitions.HPNews_SubmissionPage_Step.admin_is_on_hp_news_submissions_report_page(HPNews_SubmissionPage_Step.java:31)
-	at ✽.Admin is on HP News Submissions report page(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/AdminHomePage.feature:42)
+	at ✽.Admin is on HP News Submissions report page(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/main/java/HP_Radar_featureFiles/feature/B_AdminHomePage.feature:42)
 </pre></div></td>
 <td>20</td>
-<td>TestRunner.TestNgRunner@d21a74c</td></tr>
-<tr>
-<td title='TestRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user abel to upload HP Radar post", "Verifying user able to Upload The HPCL post and HP News link"</td>
-<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (625, 932) is out of bounds of viewport width (1280) and height (899)
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e39ecf6e-4409-4134-849b-56365fd0f5e4, actions {actions=[org.openqa.selenium.interactions.Sequence@5e888fba]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:16070, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6640, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:16070/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e39ecf6e-4409-4134-849b-56365fd0f5e4
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:603)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:585)
-	at WebActions.ActionClass.Click(ActionClass.java:31)
-	at PageObjects.HPCL_PostPage.Slect_UploadBtn(HPCL_PostPage.java:157)
-	at StepDefinitions.PHRadar_PostPage_Step.user_should_able_to_upload_the_post(PHRadar_PostPage_Step.java:73)
-	at ✽.User should able to upload the post(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/UserHomePage.feature:33)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181375360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1181375360'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (625, 932) is out of bounds of viewport width (1280) and height (899)
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e39ecf6e-4409-4134-849b-56365fd0f5e4, actions {actions=[org.openqa.selenium.interactions.Sequence@5e888fba]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:debuggerAddress: 127.0.0.1:16070, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6640, moz:profile: C:\Users\10141H1R\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:16070/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e39ecf6e-4409-4134-849b-56365fd0f5e4
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:603)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:585)
-	at WebActions.ActionClass.Click(ActionClass.java:31)
-	at PageObjects.HPCL_PostPage.Slect_UploadBtn(HPCL_PostPage.java:157)
-	at StepDefinitions.PHRadar_PostPage_Step.user_should_able_to_upload_the_post(PHRadar_PostPage_Step.java:73)
-	at ✽.User should able to upload the post(file:///C:/Users/10141H1R/HPCL-POC/HPCL_Poc_Demo/./src/test/java/HP_Radar_featureFiles/feature/UserHomePage.feature:33)
-</pre></div></td>
-<td>28</td>
-<td>TestRunner.TestNgRunner@d21a74c</td></tr>
+<td>TestRunner.TestNgRunner@41e1e210</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='TestRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Admin user is able to upload HP Senior League Videos or not", "Verifying user able to Upload The HPCL post and HP News link"</td>
+<td></td>
+<td>7</td>
+<td>TestRunner.TestNgRunner@41e1e210</td></tr>
+<tr>
 <td title='TestRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user abel to upload HP Radar News", "Verifying user able to Upload The HPCL post and HP News link"</td>
 <td></td>
-<td>24</td>
-<td>TestRunner.TestNgRunner@d21a74c</td></tr>
-<tr>
-<td title='TestRunner.TestNgRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.TestNgRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Admin user able to Rejected the report is rejected successfully", "Verifying user able to Upload The HPCL post and HP News link"</td>
-<td></td>
-<td>9</td>
-<td>TestRunner.TestNgRunner@d21a74c</td></tr>
+<td>25</td>
+<td>TestRunner.TestNgRunner@41e1e210</td></tr>
 </table><p>
 </body>
 </html>

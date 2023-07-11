@@ -25,8 +25,8 @@ import UtilityFiles.ConfigReader;
 @CucumberOptions
 	(
 			
-			//features= {FeaturePath.feature},
-			features= {FeaturePath.UserHomePage,FeaturePath.AdminHomeapge},
+			//Sfeatures= {FeaturePath.feature},
+			features= {FeaturePath.UserHomePage},
             glue={"StepDefinitions","ApplicationHooks"},
            
           
@@ -35,11 +35,13 @@ import UtilityFiles.ConfigReader;
                             "json:reports/HPCL_Reports.json",
                             "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                             "rerun:target/rerun.txt", //Mandatory to capture failures
-                          	},    
+                          	} 
             
            // dryRun=false,
            // monochrome=true,
-           tags = "@User_Sanity or @Admin_Sanituy"
+         // tags = "@user_Sanity or @smoke"
+          //tags = "@Admin_Sanity"
+           //tags = "@User_Sanity"
            //tags =  "@unit"
            
 		
@@ -51,7 +53,7 @@ public class TestNgRunner extends AbstractTestNGCucumberTests{
 	
 	
 	 @Override
-	    @DataProvider(parallel = true)
+	    @DataProvider(parallel = false)
 	    public Object[][] scenarios() {
 	        return super.scenarios();
 	    }

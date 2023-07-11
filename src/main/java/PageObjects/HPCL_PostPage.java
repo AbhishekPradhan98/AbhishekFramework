@@ -116,11 +116,11 @@ public class HPCL_PostPage extends BasePage {
 		try {
 			English.click();
 			driver.switchTo().frame(Frame);
-			Thread.sleep(2000);
+			
 			act.TextSend(SearchBocx, EngText);
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			SearchBocx.clear();
-			Thread.sleep(3000);
+			
 
 			// Select Hindi language
 

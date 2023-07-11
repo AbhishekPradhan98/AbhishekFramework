@@ -21,7 +21,7 @@ public class Hooks {
 	
 	
 
-	@Before(order = 1)
+	@Before(order = 0)
 	public void getProperty() {
 		configReader = new ConfigReader();
 		prop = configReader.init_prop();

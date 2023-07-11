@@ -7,8 +7,8 @@
         <methods>
           <include name="setUpClass"/>
           <include name="SetUpApplication"/>
-          <include name="runScenario"/>
           <include name="tearDownClass"/>
+          <include name="runScenario"/>
         </methods>
       </class> <!-- TestRunner.TestNgRunner -->
     </classes>

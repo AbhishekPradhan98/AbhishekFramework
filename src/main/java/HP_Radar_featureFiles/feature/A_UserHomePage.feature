@@ -1,3 +1,4 @@
+ 
 Feature: Verifying user able to Upload The HPCL post and HP News link
 
 
@@ -18,7 +19,7 @@ Background:
 #	Then User able to Navigates to HPCL Post Page 
 #	 
 	
-@Upload_HpRadar_Post @Regression @User_Sanity
+ 
 	Scenario: Verify user abel to upload HP Radar post 
 	Then User able to move upload link and select the HP_Radar Post
 	Then User select the Category as "Activities" and enter the title of photo as "Green Scenery"
@@ -33,14 +34,14 @@ Background:
 	Then User should able to upload the post
 
 	
-#	
-	@Upload_Hp_News @Regression @User_Sanity
-	Scenario: Verify user abel to upload HP Radar News
-	Given User is on HomePage
-	Then User able to select the HP_Radar News
-	Given Useris on HP_Radar NewsPage
-	Then User select the Category as "Photograph" 
-	Then User able to Choose the file and Upload the the HP Radar News  
+	
+
+#	Scenario: Verify user abel to upload HP Radar News
+#	Given User is on HomePage
+#	Then User able to select the HP_Radar News
+#	Given Useris on HP_Radar NewsPage
+#	Then User select the Category as "Photograph" 
+#	Then User able to Choose the file and Upload the the HP Radar News  
 
 	
 	

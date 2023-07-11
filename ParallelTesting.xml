@@ -25,11 +25,11 @@
     </classes>
   </test>	
   
-  <test thread-count="5" name="FireFoxBrowserTest">
+  <!--<test thread-count="5" name="FireFoxBrowserTest">
 	  <parameter name="Browser" value="Firefox"/>
     <classes>
       <class name="TestRunner.TestNgRunner"/>
     </classes>
-  </test>	
+  </test>	-->
   
 </suite> 

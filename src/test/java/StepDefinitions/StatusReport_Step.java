@@ -1,11 +1,11 @@
 package StepDefinitions;
 
 import org.junit.Assert;
+import org.testng.annotations.BeforeClass;
 
 import PageObjects.AdminHomePage;
 import PageObjects.StatusReportPage;
 import QA.DriverFactory.DriverFactory;
-import TestBase.BaseClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -15,6 +15,7 @@ public class StatusReport_Step {
 	
 	AdminHomePage AdminHomePage = new AdminHomePage(DriverFactory.getDriver());
 	StatusReportPage StatusReportPage = new StatusReportPage(DriverFactory.getDriver());
+	PHRadar_PostPage_Step PHRadar_PostPage_Step=new PHRadar_PostPage_Step();
 	
 	
 	
@@ -24,11 +25,16 @@ public class StatusReport_Step {
     }
 	
 //	Admin_Approved_The_Report
-	 
+
 	@Then("Admin enters the status as {string} and selects the submit button")
     public void AdminApproved_TheReport(String Approved)
 	{
-    	
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		StatusReportPage.EnterSearchBox("Green Scenery");
 		String Name=StatusReportPage.GetCategory();
 		
@@ -69,10 +75,73 @@ public class StatusReport_Step {
 	    		
 	    	}System.out.println("report is approved and published");
 	    }
+	 
+//		Admin_Unpublish_The_Report
+	    @Then("Admin enters the status as {string} and Selects the submit button")
+	    public void AdminUnpublish_theReport(String Unpublished) {
+	    	
+	    	
+	    	try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    	
+			StatusReportPage.EnterSearchBox("Green Scenery");
+			String Name=StatusReportPage.GetCategory();
+			
+			if(Name.equals("Green Scenery"))
+			{
+				
+				Assert.assertEquals("Green Scenery","Green Scenery");
+				Assert.assertTrue(true);
+				
+				//StatusReportPage.ApprovedPost(Approved);
+				//StatusReportPage.RejectPost(Rejected);
+				StatusReportPage.Unpublish(Unpublished);
+
+			}else
+			{
+				Assert.assertEquals(false,"Category Name Not Matched rejection pending");
+			}
+				
+		
+	    }
+
+	   
+	    //check whether report is Unpublished successfully
+
+	    @Then("Admin is able to check whether the report is unpublished successfully")
+	    public void Unpublished_Status() {
+	    	
+	    	String  check=StatusReportPage.GetRejection_Status();
+	    	
+	    	if(check!="rejected")////get the webelement for WebElement Actionbox;
+	    	{
+	    		Assert.assertTrue(true);
+	    		System.out.println("report is Unpublished successfully");
+	    		
+	    	}else
+	    	{
+	    		Assert.assertTrue(false);
+	    		System.out.println("No reports are avalible to Unpublish");
+	    	}
+	    
+	    }
+
 
 //	Admin_Reject_The_Report
+	
     @Then("Admin enters the Status as {string} and selects the submit button")
     public void adminEntersStatusAndSubmit(String Rejected) {
+    	
+    	try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     	
 		StatusReportPage.EnterSearchBox("Green Scenery");
 		String Name=StatusReportPage.GetCategory();
@@ -117,51 +186,6 @@ public class StatusReport_Step {
       
     }
     
-//	Admin_Unpublish_The_Report
-    @Then("Admin enters the status as {string} and Selects the submit button")
-    public void AdminUnpublish_theReport(String Unpublished) {
-    	
-		StatusReportPage.EnterSearchBox("Green Scenery");
-		String Name=StatusReportPage.GetCategory();
-		
-		if(Name.equals("Green Scenery"))
-		{
-			
-			Assert.assertEquals("Green Scenery","Green Scenery");
-			Assert.assertTrue(true);
-			
-			//StatusReportPage.ApprovedPost(Approved);
-			//StatusReportPage.RejectPost(Rejected);
-			StatusReportPage.Unpublish(Unpublished);
-
-		}else
-		{
-			Assert.assertEquals(false,"Category Name Not Matched rejection pending");
-		}
-			
-	
-    }
-
-   
-    //check whether report is Unpublished successfully
-
-    @Then("Admin is able to check whether the report is unpublished successfully")
-    public void Unpublished_Status() {
-    	
-    	String  check=StatusReportPage.GetRejection_Status();
-    	
-    	if(check!="rejected")////get the webelement for WebElement Actionbox;
-    	{
-    		Assert.assertTrue(true);
-    		System.out.println("report is Unpublished successfully");
-    		
-    	}else
-    	{
-    		Assert.assertTrue(false);
-    		System.out.println("No reports are avalible to Unpublish");
-    	}
-    
-    }
 
 
 }

@@ -8,11 +8,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-  
-  
+
 	<name>OpenCartJacoco</name>
 	<url>http://maven.apache.org</url>
-	
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,32 +19,42 @@
 
 	<build>
 		<plugins>
-			
-			 <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
-             </plugin>
-             
-             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version>
-                <configuration>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.1.2</version>
+				<configuration>
 					<!-- Pass the test  testng.xml here to jenkins -->
 
 					<suiteXmlFiles>
-		          	      		 <suiteXmlFile>ParallelTesting.xml</suiteXmlFile>
-		          	 </suiteXmlFiles>
-		          <!-- Pass the test  testng.xml here to jenkins --> 
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <!--<includes>
+						<suiteXmlFile>TestNg.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					
+					<!--<suiteXmlFiles>
+						<suiteXmlFile>${xmlFiles}</suiteXmlFile>
+					</suiteXmlFiles>
+-->
+					
+						<parallel>classes</parallel>
+						<useUnlimitedThreads>classes</useUnlimitedThreads>
+						<threadCount>4</threadCount>
+					
+					<!-- Pass the test  testng.xml here to jenkins -->
+					<testFailureIgnore>true</testFailureIgnore>
+					<!--<includes>
                         <include>**/*testng.xml</include>
                     </includes>-->
-                </configuration>
-            </plugin>
-			
-			
+				</configuration>
+			</plugin>
+
+
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -79,22 +88,18 @@
 							report. -->
 							<outputDirectory>target/my-reports</outputDirectory>
 						</configuration>
-						
+
 					</execution>
 				</executions>
 				<configuration>
 					<systemPropertyVariables>
 						<jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
 					</systemPropertyVariables>
-					
+
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
-
-
-
 
 
 	<dependencies>

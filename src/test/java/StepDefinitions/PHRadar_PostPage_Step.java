@@ -25,14 +25,14 @@ public class PHRadar_PostPage_Step {
 	}
 
 	@Then("User select the Category as {string} and enter the title of photo as {string}")
-	public void user_select_the_category_as_and_enter_the_title_of_photo_as(String Category, String photo) {
+	public void SelectCategoryAnd_Phot(String Category, String photo) {
 
 		HPCL_PostPage.SelectCategory(Category, photo);
 
 	}
 
 	@Then("User Abel to click on pluse button to upload the photo as {string}")
-	public void user_abel_to_click_on_pluse_button_to_upload_the_photo_as(String string) throws Throwable {
+	public void UploadPhots(String string) throws Throwable {
 
 		HPCL_PostPage.Addphoto();
 
@@ -45,7 +45,7 @@ public class PHRadar_PostPage_Step {
 	}
 
 	@Then("User should enter the caption of the photo as {string}")
-	public void user_should_enter_the_caption_of_the_photo_as(String string) throws Throwable {
+	public void EnterPhotoCaptino(String string) throws Throwable {
 
 		
 
@@ -53,13 +53,13 @@ public class PHRadar_PostPage_Step {
 	}
 
 	@Then("User select the English or Hindi language and enter the correct text in the SearchBox")
-	public void user_select_the_english_or_hindi_language_and_enter_the_correct_text_in_the_search_box() {
+	public void EnterTheLanguage() {
 		HPCL_PostPage.EnterMultiple_Languages("Enter the correct text in the SearchBox","खोज बॉक्स में शुद्ध पाठ दर्ज करें");
 
 	}
 
 	@Then("User able enter the employee name as {string} for tagging and select the chek box")
-	public void user_able_enter_the_employee_name_as_for_tagging_and_select_the_chek_box(String employee_name) {
+	public void TagThepeople(String employee_name) {
 
 		HPCL_PostPage.SlectTag_Pepole(employee_name);
 
@@ -68,7 +68,7 @@ public class PHRadar_PostPage_Step {
 	}
 
 	@Then("User should able to upload the post")
-	public void user_should_able_to_upload_the_post() {
+	public void UploadThe_Post() {
 
 		HPCL_PostPage.Slect_UploadBtn();
 
