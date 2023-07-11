@@ -33,14 +33,13 @@
 				<configuration>
 					<!-- Pass the test  testng.xml here to jenkins -->
 
-					<suiteXmlFiles>
-						<suiteXmlFile>TestNg.xml</suiteXmlFile>
-					</suiteXmlFiles>
-					
 					<!--<suiteXmlFiles>
+						<suiteXmlFile>TestNg.xml</suiteXmlFile>
+					</suiteXmlFiles>-->
+					
+					<suiteXmlFiles>
 						<suiteXmlFile>${xmlFiles}</suiteXmlFile>
 					</suiteXmlFiles>
--->
 					
 						<parallel>classes</parallel>
 						<useUnlimitedThreads>classes</useUnlimitedThreads>
