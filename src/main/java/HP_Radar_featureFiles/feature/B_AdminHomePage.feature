@@ -36,11 +36,11 @@ Background:
 
 	
 
-#	Scenario: Verifying Admin user able to approve and publish the post
+	Scenario: Verifying Admin user able to approve and publish the post
 #	Given Admin is already logged into the application by giving email as "31982600" and password as "abcd"
-#	When Admin is on HomePage and Select HP News Submission link
-#	When Admin is on HP News Submissions report page
-#	Then admin is able to see the HP News submitted by user
+	When Admin is on HomePage and Select HP News Submission link
+	When Admin is on HP News Submissions report page
+	Then admin is able to see the HP News submitted by user
 	
 	
 	
@@ -58,15 +58,15 @@ Background:
 #	Then User is able to see the alert message	Then User should see alert message saying that "Data inserted successfully"
 #
 #
-#	Scenario: Verifying Admin user is able to upload HP Senior League Videos or not 
-#	When Admin is on HomePage and Select  HP Senior League Videos link
-#	When Admin is on HP Senior League Page
-#	Then User to select month as "January" and year as "2020"
-#	And User able to enter the employee name as "Sudesh kumar" and the Designation as "Sr. Manager"
-#	And Uesr able to enter the location as "Hyderabad" and  enter the priority as "3"
-#	And user able to choose file and click on upload
-#	Then User is able to see the alert message
-#	
+	Scenario: Verifying Admin user is able to upload HP Senior League Videos or not 
+	When Admin is on HomePage and Select  HP Senior League Videos link
+	When Admin is on HP Senior League Page
+	Then User to select month as "January" and year as "2020"
+	And User able to enter the employee name as "Sudesh kumar" and the Designation as "Sr. Manager"
+	And Uesr able to enter the location as "Hyderabad" and  enter the priority as "3"
+	And user able to choose file and click on upload
+	Then User is able to see the alert message
+	
 	
 	
 	

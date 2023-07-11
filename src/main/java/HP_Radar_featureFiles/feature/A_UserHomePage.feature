@@ -36,12 +36,12 @@ Background:
 	
 	
 
-#	Scenario: Verify user abel to upload HP Radar News
-#	Given User is on HomePage
-#	Then User able to select the HP_Radar News
-#	Given Useris on HP_Radar NewsPage
-#	Then User select the Category as "Photograph" 
-#	Then User able to Choose the file and Upload the the HP Radar News  
+	Scenario: Verify user abel to upload HP Radar News
+	Given User is on HomePage
+	Then User able to select the HP_Radar News
+	Given Useris on HP_Radar NewsPage
+	Then User select the Category as "Photograph" 
+	Then User able to Choose the file and Upload the the HP Radar News  
 
 	
 	

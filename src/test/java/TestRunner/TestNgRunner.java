@@ -26,7 +26,7 @@ import UtilityFiles.ConfigReader;
 	(
 			
 			//Sfeatures= {FeaturePath.feature},
-			features= {FeaturePath.UserHomePage},
+			features= {FeaturePath.UserHomePage,FeaturePath.AdminHomeapge},
             glue={"StepDefinitions","ApplicationHooks"},
            
           
@@ -53,7 +53,7 @@ public class TestNgRunner extends AbstractTestNGCucumberTests{
 	
 	
 	 @Override
-	    @DataProvider(parallel = false)
+	    @DataProvider(parallel = true)
 	    public Object[][] scenarios() {
 	        return super.scenarios();
 	    }
