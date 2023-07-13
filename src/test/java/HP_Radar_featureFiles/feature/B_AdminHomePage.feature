@@ -35,10 +35,10 @@ Background:
 
 	
 
-#	Scenario: Verifying Admin user able to approve and publish the post
-#	When Admin is on HomePage and Select HP News Submission link
-#	When Admin is on HP News Submissions report page
-#	Then admin is able to see the HP News submitted by user
+	Scenario: Verifying Admin user able see the HP News submitted by user
+	When Admin is on HomePage and Select HP News Submission link
+	When Admin is on HP News Submissions report page
+	Then admin is able to see the HP News submitted by user
 	
 	
 	

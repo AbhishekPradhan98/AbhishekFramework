@@ -31,17 +31,7 @@ public class ActionClass {
 		act.click(ele).build().perform();
 	}
 	
-	public String SwitchToAlert(WebDriver driver, WebElement ele)
-	{
-		
-		Alert alert=driver.switchTo().alert();
-		String AlertMsg=ele.getText();
-		System.out.println(AlertMsg);
-		alert.accept();
-		return AlertMsg;
-		
-		
-	}
+
 	
 	
 
@@ -73,41 +63,9 @@ public class ActionClass {
 	}
 
 	// Method for to check Radio button is Enable or not
-	public boolean IsEnable(WebDriver driver, WebElement ele) {
-
-		boolean flag = false;
-
-		ele.isEnabled();
-		flag = true;
-
-		if (flag) {
-			System.out.println("Successfully Found And Element is displayed at");
-		}
-
-		else {
-			System.out.println("Successfully Found Element But Element is not displayed at");
-		}
-		return flag;
-	}
-
+	
 	// Method for to check Element button is Selected or not
-	public boolean IsSelected(WebDriver driver, WebElement ele) {
-
-		boolean flag = false;
-
-		ele.isEnabled();
-		flag = true;
-
-		if (flag) {
-			System.out.println("Successfully Found And Element is displayed at");
-		}
-
-		else {
-			System.out.println("Successfully Found Element But Element is not displayed at");
-		}
-		return flag;
-	}
-
+	
 	/**
 	 * Method Name Send the text in the Search Field box
 	 * 
@@ -184,62 +142,8 @@ public class ActionClass {
 	 * @Kiran Select a Text by value
 	 * @return - true/false
 	 */
-	public boolean SelectByIndex(WebElement driver, int ele) {
-
-		boolean flag = false;
-
-		try {
-
-			Select sel = new Select(driver);
-			sel.selectByIndex(ele);
-			flag = true;
-
-		} catch (Exception e)
-
-		{
-			System.out.println("Index value is not Selected at");
-			flag = false;
-		} finally
-
-		{
-			if (flag) {
-				System.out.println("Successfully selected index a value");
-			} else {
-				System.out.println("Unable to get the index value");
-			}
-		}
-
-		return false;
-	}
-
-	public boolean SelectByVisibleText(WebElement driver, String ele) {
-
-		boolean flag = false;
-
-		try {
-
-			Select sel = new Select(driver);
-			sel.selectByVisibleText(ele);
-			flag = true;
-
-		} catch (Exception e)
-
-		{
-			System.out.println("Index value is not Selected at");
-			flag = false;
-		} finally
-
-		{
-			if (flag) {
-				System.out.println("Successfully selected index a value");
-			} else {
-				System.out.println("Unable to get the index value");
-			}
-		}
-
-		return false;
-	}
-
+	
+	
 	public boolean SelectByValue(WebElement driver, String ele) {
 
 		boolean flag = false;
@@ -307,29 +211,5 @@ public class ActionClass {
 
 	}
 
-	/**
-	 * Method for Synchronization and Wait Statement
-	 * 
-	 * @return Time in second
-	 * 
-	 *
-	 * @Kiran implicitWait ExplicitWait and PageLoadTime
-	 * @return - Time in second
-	 */
-
-	public void implicitWait(WebDriver driver, int timeOut) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeOut));
-	}
-
-	public void explicitWait(WebDriver driver, WebElement element, Duration timeOut) {
-		WebDriverWait wait = new WebDriverWait(driver, timeOut);
-		wait.until(ExpectedConditions.visibilityOf(element));
-	}
-
-	public void pageLoadTimeOut(WebDriver driver, int timeOut)
-
-	{
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(timeOut));
-	}
-
+	
 }

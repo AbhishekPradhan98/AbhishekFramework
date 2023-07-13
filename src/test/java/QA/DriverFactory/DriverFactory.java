@@ -61,7 +61,7 @@ public class DriverFactory {
 		getDriver().manage().window().maximize();
 		getDriver().get("http://10.90.170.140/hpcl_grp1/PRCC/index_beforeCA.jsp");
 		
-		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		return getDriver();
 

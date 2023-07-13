@@ -27,6 +27,7 @@ import UtilityFiles.ConfigReader;
 			
 			//Sfeatures= {FeaturePath.feature},
 			features= {FeaturePath.UserHomePage,FeaturePath.AdminHomeapge},
+			//features="@target/rerun.txt",//Runs only Failures
             glue={"StepDefinitions","ApplicationHooks"},
            
           
