@@ -19,7 +19,7 @@ Background:
 #	Then User able to Navigates to HPCL Post Page 
 #	 
 	
- 
+@Sanity
 	Scenario: Verify user abel to upload HP Radar post 
 	Then User able to move upload link and select the HP_Radar Post
 	Then User select the Category as "Activities" and enter the title of photo as "Green Scenery"
@@ -35,7 +35,7 @@ Background:
 
 	
 	
-
+@Sanity
 	Scenario: Verify user abel to upload HP Radar News
 	Given User is on HomePage
 	Then User able to select the HP_Radar News

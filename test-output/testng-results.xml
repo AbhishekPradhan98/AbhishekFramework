@@ -1,135 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-11T15:40:25 IST" name="My_Suite" finished-at="2023-07-11T15:41:02 IST" duration-ms="36565">
+  <suite started-at="2023-07-13T13:22:19 IST" name="My_Suite" finished-at="2023-07-13T13:22:34 IST" duration-ms="14991">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner2@e1de817]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-07-11T15:40:25 IST" name="ChromeBrowserTest" finished-at="2023-07-11T15:40:44 IST" duration-ms="18635">
-      <class name="TestRunner.TestNgRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:25 IST" name="setUpClass" finished-at="2023-07-11T15:40:26 IST" duration-ms="670" status="PASS">
+    <test started-at="2023-07-13T13:22:19 IST" name="ChromeBrowserTest" finished-at="2023-07-13T13:22:34 IST" duration-ms="14991">
+      <class name="TestRunner.TestNgRunner2">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestNgRunner2@e1de817]" started-at="2023-07-13T13:22:19 IST" name="setUpClass" finished-at="2023-07-13T13:22:20 IST" duration-ms="869" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3f3c966c]]>
+                <![CDATA[org.testng.TestRunner@27462a88]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="SetUpApplication(java.lang.String)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:26 IST" name="SetUpApplication" finished-at="2023-07-11T15:40:26 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="SetUpApplication(java.lang.String)[pri:0, instance:TestRunner.TestNgRunner2@e1de817]" started-at="2023-07-13T13:22:20 IST" name="SetUpApplication" finished-at="2023-07-13T13:22:20 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpApplication -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:42 IST" duration-ms="16380" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user able to unpublished the report successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:41 IST" duration-ms="14878" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user abel to upload HP Radar post"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:42 IST" duration-ms="16234" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user able to approve and publish the post"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:37 IST" duration-ms="10648" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user able to approve and publish the post"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:43 IST" duration-ms="17212" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user able to Rejected the report is rejected successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:37 IST" duration-ms="11228" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user is able to upload HP Senior League Videos or not"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:44 IST" duration-ms="17870" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner2@e1de817]" started-at="2023-07-13T13:22:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-13T13:22:31 IST" duration-ms="11482" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,153 +48,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestNgRunner@e1de817]" started-at="2023-07-11T15:40:44 IST" name="tearDownClass" finished-at="2023-07-11T15:40:44 IST" duration-ms="56" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner2@e1de817]" started-at="2023-07-13T13:22:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-13T13:22:28 IST" duration-ms="8318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verifying Admin user is able to upload HP Senior League Videos or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner2@e1de817]" started-at="2023-07-13T13:22:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-13T13:22:32 IST" duration-ms="12638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user abel to upload HP Radar post"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestNgRunner2@e1de817]" started-at="2023-07-13T13:22:32 IST" name="tearDownClass" finished-at="2023-07-13T13:22:34 IST" duration-ms="1445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.TestNgRunner -->
+      </class> <!-- TestRunner.TestNgRunner2 -->
     </test> <!-- ChromeBrowserTest -->
-    <test started-at="2023-07-11T15:40:44 IST" name="EdgeBrowserTest" finished-at="2023-07-11T15:41:02 IST" duration-ms="17907">
-      <class name="TestRunner.TestNgRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:40:44 IST" name="setUpClass" finished-at="2023-07-11T15:40:44 IST" duration-ms="20" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@11ee02f8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="SetUpApplication(java.lang.String)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:40:44 IST" name="SetUpApplication" finished-at="2023-07-11T15:40:44 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpApplication -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:40:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:57 IST" duration-ms="12728" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user abel to upload HP Radar News"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:40:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:41:00 IST" duration-ms="15981" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user abel to upload HP Radar post"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:40:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:52 IST" duration-ms="8088" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user able to approve and publish the post"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:40:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:41:02 IST" duration-ms="17862" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user able to unpublished the report successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:40:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:53 IST" duration-ms="9513" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user is able to upload HP Senior League Videos or not"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:40:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:40:57 IST" duration-ms="13251" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user able to approve and publish the post"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:40:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-11T15:41:01 IST" duration-ms="16961" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verifying Admin user able to Rejected the report is rejected successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verifying user able to Upload The HPCL post and HP News link"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestNgRunner@2f8dad04]" started-at="2023-07-11T15:41:02 IST" name="tearDownClass" finished-at="2023-07-11T15:41:02 IST" duration-ms="21" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.TestNgRunner -->
-    </test> <!-- EdgeBrowserTest -->
   </suite> <!-- My_Suite -->
 </testng-results>

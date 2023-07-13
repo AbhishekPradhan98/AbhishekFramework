@@ -23,12 +23,11 @@ Background:
 
 	Scenario: Verifying Admin user able to unpublished the report successfully
 	Then Admin able to move admin link and select the status report link
-#	When Admin is on status report page select the recored
 	Then Admin enters the status as "Unpublish" and Selects the submit button
 	Then Admin is able to check whether the report is unpublished successfully
 	
 
-	Scenario: Verifying Admin user able to Rejected the report is rejected successfully
+	Scenario: Verifying Admin user able to Rejected the report successfully
 	Then Admin able to move admin link and select the status report link
 #	When Admin is on status report page select the recored
 	Then Admin enters the Status as "Rejected" and selects the submit button
@@ -36,11 +35,10 @@ Background:
 
 	
 
-	Scenario: Verifying Admin user able to approve and publish the post
-#	Given Admin is already logged into the application by giving email as "31982600" and password as "abcd"
-	When Admin is on HomePage and Select HP News Submission link
-	When Admin is on HP News Submissions report page
-	Then admin is able to see the HP News submitted by user
+#	Scenario: Verifying Admin user able to approve and publish the post
+#	When Admin is on HomePage and Select HP News Submission link
+#	When Admin is on HP News Submissions report page
+#	Then admin is able to see the HP News submitted by user
 	
 	
 	
@@ -57,7 +55,7 @@ Background:
 #	And user able to choose file and click on upload
 #	Then User is able to see the alert message	Then User should see alert message saying that "Data inserted successfully"
 #
-#
+@Smoke
 	Scenario: Verifying Admin user is able to upload HP Senior League Videos or not 
 	When Admin is on HomePage and Select  HP Senior League Videos link
 	When Admin is on HP Senior League Page

@@ -39,7 +39,7 @@ import UtilityFiles.ConfigReader;
             
            // dryRun=false,
            // monochrome=true,
-         // tags = "@user_Sanity or @smoke"
+          //tags = "@Sanity or @Smoke"
           //tags = "@Admin_Sanity"
            //tags = "@User_Sanity"
            //tags =  "@unit"
@@ -53,7 +53,7 @@ public class TestNgRunner extends AbstractTestNGCucumberTests{
 	
 	
 	 @Override
-	    @DataProvider(parallel = true)
+	    @DataProvider(parallel = false)
 	    public Object[][] scenarios() {
 	        return super.scenarios();
 	    }
