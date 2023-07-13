@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 import PageObjects.HomePage;
 import PageObjects.LogInPage;
 import QA.DriverFactory.DriverFactory;
-import TestBase.BaseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -35,7 +34,7 @@ public class LoginPage_Steps {
 	public void user_enter_email_as_and_password_as(String email, String password) {
 		
 
-		LogInPage = new LogInPage(BaseClass.driver);
+		LogInPage = new LogInPage(DriverFactory.getDriver());
 
 		HomePage = LogInPage.setEmail(email, password);
 
