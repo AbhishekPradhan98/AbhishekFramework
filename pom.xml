@@ -34,7 +34,7 @@
 					<!-- Pass the test  testng.xml here to jenkins -->
 
 					<suiteXmlFiles>
-						<suiteXmlFile>TestNg.xml</suiteXmlFile>
+						<suiteXmlFile>ParallelTesting.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					
 					<!--<suiteXmlFiles>
