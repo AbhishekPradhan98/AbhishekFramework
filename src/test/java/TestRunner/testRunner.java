@@ -1,8 +1,6 @@
 package TestRunner;
 
 import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.DataProvider;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -11,9 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions
         (
                 //features= {".//Features/"},
-                features= {".//src\\test\\java\\HP_Radar_featureFiles\\feature\\HPRadarLoginDDT.feature"},
+//                features= {".//src\\test\\java\\HP_Radar_featureFiles\\feature\\HPRadarLoginDDT.feature"},
                // features= {".//src\\test\\java\\HP_Radar_featureFiles\\feature\\HP_Radar_LoginPage.feature,UserHomePage.feature"},
-               // features= {".//src/test/java/HomePage.feature"},
+                features= {".//src/test/java/HomePage.feature"},
                 glue={"StepDefinitions","TestBase"},
                
               
